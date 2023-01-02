@@ -162,6 +162,10 @@ p {
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__container {
     max-width: 1200px;
     margin: auto;
 }
@@ -195,4 +199,37 @@ p {
 .major__descriptoin {
     color: var(--color-dark-grey);
     font-size: var(--font-medium);
+}
+
+/* Skill */
+#skills {
+    background-color: var(--color-yellow);
+}
+
+.skillset {
+    width: 100%;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    margin: 20px 0;
+    padding: 20px 40px;
+}
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-grey);
+}
+
+.skill__value {
+    height: 3px;
+    background-color: var(--color-orange);
 }
