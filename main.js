@@ -15,10 +15,20 @@ document.addEventListener('scroll', () => {
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (e) => {
     const targetLink = e.target.dataset.link;
-    if (targetLink === null) {
+    if (targetLink == null) {
         return;
     }
 
-    const scrollTo = document.querySelector(targetLink);
-    scrollTo.scrollIntoView({ behavior: 'smooth' });
+    scrollIntoView(targetLink);
 });
+
+// contact me
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+    scrollIntoView('#contact');
+});
+
+function scrollIntoView(selectior) {
+    const scrollTo = document.querySelector(selectior);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
