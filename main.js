@@ -10,3 +10,15 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
+
+//네브바 스크롤 이동
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (e) => {
+    const targetLink = e.target.dataset.link;
+    if (targetLink === null) {
+        return;
+    }
+
+    const scrollTo = document.querySelector(targetLink);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+});

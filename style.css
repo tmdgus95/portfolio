@@ -111,6 +111,7 @@ p {
 #navbar.navbar--dark {
     background-color: var(--color-pink);
     padding: 8px;
+    z-index: 1;
 }
 
 .navbar__menu {
@@ -392,6 +393,7 @@ p {
         flex-direction: column;
         text-align: center;
         width: 100%;
+        display: none;
     }
 
     .about__majors {
