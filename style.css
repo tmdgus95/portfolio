@@ -99,10 +99,10 @@ p {
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    background-color: var(--color-pink);
 }
 
 .navbar__menu {
