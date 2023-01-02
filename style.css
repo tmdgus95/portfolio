@@ -129,6 +129,15 @@ p {
     background-color: var(--color-dark-pink);
 }
 
+.navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
 /* Home */
 #home {
     background: url('image/home_background_12930ad7e0.png');
@@ -358,4 +367,33 @@ p {
 .contact__links i:hover {
     transform: scale(1.1);
     color: var(--color-yellow);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 38px;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
 }
