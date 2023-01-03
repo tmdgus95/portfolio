@@ -149,7 +149,7 @@ p {
 
 /* Home */
 #home {
-    background: url('image/home_background_12930ad7e0.png');
+    background: url('image/home_background_12930ad7e0.png') center/cover no-repeat;
     padding: 40px;
     padding-top: 100px;
     text-align: center;

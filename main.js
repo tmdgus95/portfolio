@@ -28,6 +28,13 @@ homeContactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+// 홈 투명하게 만들기
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 function scrollIntoView(selectior) {
     const scrollTo = document.querySelector(selectior);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
