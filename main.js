@@ -18,8 +18,14 @@ navbarMenu.addEventListener('click', (e) => {
     if (targetLink == null) {
         return;
     }
-
+    navbarMenu.classList.remove('open');
     scrollIntoView(targetLink);
+});
+
+// 네브바 토글 버튼
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 // contact me
