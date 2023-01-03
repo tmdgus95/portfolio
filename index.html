@@ -142,25 +142,35 @@
                 <h1>My work</h1>
                 <h3>Projects</h3>
                 <div class="work__categories">
-                    <button class="category__btn active">
+                    <button class="category__btn seleted" data-filter="*">
                         모두 보기 <span class="categort__count">3</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="personal">
                         개인 프로젝트 <span class="categort__count">1</span>
                     </button>
-                    <button class="category__btn">
+                    <button class="category__btn" data-filter="collaborate">
                         협업 프로젝트 <span class="categort__count">2</span>
                     </button>
                 </div>
                 <div class="work__projects">
-                    <a href="https://github.com/tmdgus95" class="project" target="_blank">
+                    <a
+                        href="https://github.com/tmdgus95"
+                        data-type="personal"
+                        class="project"
+                        target="_blank"
+                    >
                         <img class="project__img" src="image/프로젝트.png" alt="게시판" />
                         <div class="project__description">
                             <h3>개인 프로젝트</h3>
                             <span>react, redux, react-query</span>
                         </div></a
                     >
-                    <a href="https://github.com/tmdgus95" class="project" target="_blank">
+                    <a
+                        href="https://github.com/tmdgus95"
+                        data-type="collaborate"
+                        class="project"
+                        target="_blank"
+                    >
                         <img
                             class="project__img"
                             src="image/프로젝트.png"
@@ -171,7 +181,12 @@
                             <span>react, redux, react-query</span>
                         </div></a
                     >
-                    <a href="https://github.com/tmdgus95" class="project" target="_blank">
+                    <a
+                        href="https://github.com/tmdgus95"
+                        data-type="collaborate"
+                        class="project"
+                        target="_blank"
+                    >
                         <img class="project__img" src="image/프로젝트.png" alt="1차" />
                         <div class="project__description">
                             <h3>2차</h3>
@@ -179,6 +194,7 @@
                         </div></a
                     ><a
                         href="https://github.com/tmdgus95"
+                        data-type="collaborate"
                         class="project"
                         target="_blank"
                     >
